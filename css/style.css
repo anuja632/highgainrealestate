@@ -1,0 +1,488 @@
+body,html{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+} 
+ 
+ 
+ /* Parallax section */
+    .parallax-section {
+      position: relative;
+      background-image: url('../image/banner.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+    /* Starting Price Tag */
+    .price-tag {
+      position: absolute;
+      top: 15% ;
+      right: 20%;
+      background: #E32636	;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 30px;
+      font-weight: 500;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      white-space: nowrap;
+    }
+
+.titlehigh {
+  font-size: 52px;
+  font-family: 'Manrope', Arial, sans-serif;
+  font-weight: 700;
+  color: #E32636;
+  margin-bottom: 10px;
+}
+
+.titlehigh .subtitle {
+  font-size: 22px;
+  color: #555;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .titlehigh {
+    font-size: 40px;
+  }
+
+  .titlehigh .subtitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .titlehigh {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .titlehigh .subtitle {
+    font-size: 16px;
+    display: block;
+    margin-left: 0;
+    color: #666;
+  }
+}
+
+@media (max-width: 480px) {
+  .titlehigh {
+    font-size: 28px;
+  }
+
+  .titlehigh .subtitle {
+    font-size: 14px;
+  }
+}
+
+
+    .price-tag small {
+      font-size: 25px;
+      font-weight: 400;
+      opacity: 0.9;
+    }
+
+    .price-tag .price {
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    .bottom-box {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      padding: 0 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      z-index: 2;
+    }
+
+    .info-box {
+      background: white;
+      border-radius: 50px;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        font-size: 25px;
+
+    }
+
+    .divider {
+      width: 3px;
+      height: 45px;
+      background: #ccc;
+    }
+
+    /* .dot {
+      width: 10px;
+      height: 10px;
+      background-color: green;
+      border-radius: 50%;
+    } */
+
+    .action-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-left: 20px;
+    }
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.1);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-brochure {
+  background: #000000a3;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 30px;
+  border-radius: 50px;
+  animation: heartbeat 2s infinite;
+  transform-origin: center;
+}
+
+    .btn-register {
+      background: white;
+      color: black;
+      font-weight: bold;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 50px;
+      font-size: 14px;
+    }
+.header-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.location-text {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.location-text i {
+  color: #E32636	;
+}
+
+.logo-img {
+  max-height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.whatsapp-icon i {
+  color: green;
+  font-size: 40px;
+}
+
+/* Pulse animation for WhatsApp */
+.pulse i {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+/* Pulse animation */
+.pulse i {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Hide this section on screens smaller than 1024px */
+@media (max-width: 1023px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+}
+@media (min-width: 1600px) and (max-width: 2900px) {
+  .price-tag {
+    position: absolute;
+    top: 15%;
+    right: 50% !important;
+    transform: translateX(50%); /* 👈 This centers it */
+    background: #E32636;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+  }
+}
+
+
+
+/* MOBILE STYLES - UNIQUE CLASS NAMES */
+.mobile-layout-wrapper {
+  padding: 20px 10px;
+}
+
+.mobile-title {
+  font-size: 28px;
+}
+
+.mobile-location {
+  font-size: 14px;
+}
+.mobile-location i {
+  color: #E32636	;
+}
+
+.mobile-card {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+
+
+.mobile-btn {
+  border-radius: 30px;
+  font-size: 12px;
+  white-space: nowrap;
+  padding: 6px 15px;
+  border:1px solid white;
+  /* color:white; */
+
+}
+#aw{
+  animation: heartbeat 2s infinite;
+
+}
+
+
+.mobile-price-tag {
+  background: #E32636;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transform: translateY(50%);
+  font-weight: 600;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  z-index: 3;
+  white-space: nowrap;
+}
+
+.mobile-infos-box {
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  gap: 20px; margin-top: 15px;
+  max-width: 350px;
+  width: 100%;
+}
+.info-divider {
+  width: 2px;
+  height: 40px;
+  background-color: #ccc;
+}
+
+
+
+
+.mobile-whatsapp-btn {
+  color: green;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 16px;
+}
+
+
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-glass {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.btn-call {
+  background-color: #E32636;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.close-btn {
+  /* position: absolute;
+  top: 10px;
+  right: 15px; */
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (min-width:1080px) and (max-width:1440px){
+   .price-tag {
+      position: absolute;
+      top: 15% !important ;
+      right: 20%;
+      background: #E32636	;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 30px;
+      font-weight: 500;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      white-space: nowrap;
+    }  
+}
+    @media (min-width: 1024px) {
+      .mobile-layout-wrapper{
+        display: none !important;
+        
+      }
+    }
+
+    @media (max-width: 1024px) {
+
+          .price-tag {
+      position: absolute;
+      top: 17% !important;
+      right: 20%;
+      background: #E32636	;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 30px;
+      font-weight: 500;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      white-space: nowrap;
+    }
+    }
+    @media (max-width:1280) {
+
+         .price-tag {
+      position: absolute;
+      top: 15% !important ;
+      right: 20%;
+      background: #E32636	;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 30px;
+      font-weight: 500;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      white-space: nowrap;
+    }   
+    }

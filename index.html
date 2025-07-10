@@ -1,0 +1,202 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HighGain Realestate</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome (for location, WhatsApp icons) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="desktop-only">
+
+
+  <!-- Header Section -->
+<div class="header-section">
+  <!-- Left: Location + Logo stacked -->
+  <div class="location-logo-box d-flex flex-column align-items-start">
+        <!-- <img src="image/new-logo.jpeg" alt="HighGain Logo" class="logo-img mt-2"> -->
+              <h2 class="titlehigh">
+  HighGain <small class="subtitle">Realestate</small>
+</h2>
+
+
+
+    <div class="location-text">
+      <i class="fas fa-map-marker-alt"></i> Al Qusais, Dubai.
+    </div>
+  </div>
+
+      <!-- Right: WhatsApp Icon -->
+    <a href="https://wa.me/+918838669595" target="_blank" class="text-decoration-none">
+      <div class="whatsapp-icon pulse">
+        <i class="fab fa-whatsapp"></i>
+        <span class="text-danger fw-bold">WhatsApp<br>Now</span>
+      </div>
+    </a>
+
+</div>
+
+
+
+      <!-- Starting Price Tag -->
+      <div class="price-tag">
+        <small>Starting Price</small>
+        <div class="price">AED 20M*</div>
+      </div>
+
+  <div class="container">
+    <!-- Parallax Image Section -->
+    <div class="parallax-section py-5">
+
+
+      <div class="bottom-box">
+        <!-- Info Box -->
+        <div class="info-box">
+          <!-- Ultra Luxury + Offices -->
+          <div class="info-boxs d-flex align-items-center gap-3">
+            <div class="d-flex flex-column  lh-sm">
+              <span class="text-muted">Luxury</span>
+              <span class="text-muted"> Corporate</span>
+            </div>
+            <div style="font-weight: 700;text-align: center;">Offices</div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Size Info -->
+          <div class="info-boxs d-flex align-items-center">
+            <div class="d-flex flex-column lh-sm">
+              <span class="text-muted">Size from:</span>
+              <span style="font-weight: 700;">5,000+ <span class="fw-normal">sqft</span></span>
+            </div>
+          </div>
+
+          <!-- Green Dot -->
+          <div class="dot"></div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="action-buttons text-center mt-4">
+        <button class="btn-brochure"  onclick="openPopup()">Download Brochure</button>
+        <button class="btn-register" onclick="openPopup()">REGISTER INTEREST</button>
+      </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container mobile-layout-wrapper py-4 text-center">
+              <h2 class="titlehigh">
+  HighGain <small class="subtitle">Realestate</small>
+</h2>
+
+  <div class="mobile-location mb-3 text-muted">
+    <i class="fas fa-map-marker-alt"></i> 81262, Al Qusais, Dubai, UAE
+  </div>
+
+  <div class="position-relative mobile-card mx-auto" style="max-width: 500px; border-radius: 20px; overflow: hidden;">
+    <!-- Top Buttons -->
+    <div class="position-absolute top-0 start-50 translate-middle-x d-flex gap-2 mt-3 z-2">
+      <button class="mobile-btn btn-sm mobile-btn" onclick="openPopup()" id="aw">Download Brochure</button>
+      <button class="mobile-btn btn-sm mobile-btn" onclick="openPopup()">REGISTER INTEREST</button>
+    </div>
+
+    <!-- Image -->
+    <img src="image/banner.jpg" alt="Project" class="img-fluid w-100" />
+
+    <!-- Subtitle -->
+    <!-- <div class="mobile-subtitle text-primary mt-2 small">Ultra-Luxury Commercial Offices Tower</div> -->
+
+    <!-- Floating Price Tag -->
+<div class="mobile-price-tag d-flex align-items-center gap-2 position-absolute bottom-0 start-50 translate-middle-x text-white text-center">
+  <small style="font-size: 12px;">Starting Price</small>
+  <strong style="font-size: 20px;">AED 20M*</strong>
+</div>
+
+  </div>
+
+<!-- Info Box -->
+<div class="d-flex justify-content-center">
+  <div class="mobile-infos-box d-flex align-items-center justify-content-between px-4 py-2">
+    <!-- Left Info -->
+    <div class="d-flex align-items-center gap-3">
+      <div class="d-flex flex-column text-end lh-sm">
+        <span class="text-muted small">Luxury</span>
+        <span class="text-muted small">Corporate</span>
+      </div>
+      <div style="font-weight: 700; font-size: 16px;">Offices</div>
+    </div>
+
+    <!-- Divider -->
+    <div class="info-divider"></div>
+
+    <!-- Right Info -->
+    <div class="d-flex flex-column lh-sm text-start">
+      <span class="text-muted small">Size from:</span>
+      <span style="font-weight: 700;">5,000+ <span class="fw-normal">sqft</span></span>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- WhatsApp CTA -->
+<a href="https://wa.me/+918838669595" target="_blank" class="text-decoration-none">
+  <div class="mobile-whatsapp-btn pulse mt-3 d-flex justify-content-center align-items-center ">
+    <i class="fab fa-whatsapp fa-lg me-2"></i> WhatsApp Now
+  </div>
+</a>
+
+</div>
+<!-- ======= SHARED POPUP ======= -->
+<div class="popup-overlay" id="popup">
+  <div class="popup-glass">
+    <button class="close-btn" onclick="closePopup()">×</button>
+    <h3>
+      <i class="bi bi-telephone-fill me-1 text-warning"></i>
+      Get a call within <span class="text-warning">55 seconds</span>
+    </h3>
+    <p><strong>Leave your details</strong> and we’ll call you right away.</p>
+
+    <form class="phone-form" action="https://formsubmit.co/amir@highgainrealestate.com" method="POST">
+      <!-- FormSubmit Hidden Fields -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Callback Request">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://highgainrealestate.com/thankyou.html">
+
+      <!-- Input Fields -->
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+      </div>
+      <button type="submit" class="btn-call mt-3 w-100">📞 Request Call</button>
+    </form>
+
+    <small class="powered-by mt-3 d-block">Powered by <strong>Highgain®</strong></small>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
