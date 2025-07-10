@@ -276,6 +276,25 @@ body,html{
 
 }
 @media (min-width: 1600px) and (max-width: 2900px) {
+    .parallax-section {
+    position: relative;
+    background-image: url(../image/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    border-radius: 30px;
+    overflow: hidden;
+}
+    .header-section {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 15%;
+}
   .price-tag {
     position: absolute;
     top: 15%;
