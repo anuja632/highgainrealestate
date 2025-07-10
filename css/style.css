@@ -40,7 +40,7 @@ body,html{
   font-size: 52px;
   font-family: 'Manrope', Arial, sans-serif;
   font-weight: 700;
-  color: #E32636;
+  color: black;
   margin-bottom: 10px;
 }
 
@@ -505,3 +505,173 @@ body,html{
       white-space: nowrap;
     }   
     }
+
+        .highgain-section {
+      background: #fff;
+      padding: 60px 0;
+    }
+
+    .highgain-left h6 {
+      color: #E32636;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .highgain-left h2 {
+      font-size: 42px;
+      font-weight: 600;
+    }
+
+    .highgain-left p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .highgain-btn {
+      background-color: #E32636;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 50px;
+      padding: 12px 28px;
+      letter-spacing: 2px;
+      font-size: 14px;
+      border: none;
+    }
+
+    .highgain-img {
+      max-width: 100%;
+      mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+    }
+
+    @media (max-width: 768px) {
+      .highgain-left {
+        text-align: center;
+      }
+
+      .highgain-left h2 {
+        font-size: 32px;
+      }
+    }
+
+
+        .carousel-item {
+      height: 100vh;
+      position: relative;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    .project-title {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: white;
+      font-size: 32px;
+      font-weight: 600;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+        text-transform: uppercase; /* Makes all text uppercase */
+
+      z-index: 10;
+    }
+
+    .bottom-button {
+      position: absolute;
+      bottom: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+    }
+
+    .bottom-button .btn {
+      padding: 12px 30px;
+      font-size: 16px;
+      border-radius: 50px;
+      background: rgba(255,255,255,0.9);
+      font-weight: 500;
+    }
+    .carousel-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  z-index: 1;
+}
+
+
+
+    /* For Tablets - Screens below 992px */
+@media (max-width: 991px) {
+  .project-title {
+    font-size: 24px;
+    top: 30px;
+  }
+
+  .bottom-button {
+    bottom: 40px;
+  }
+
+  .bottom-button .btn {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}
+
+/* For Mobile Devices - Screens below 768px */
+@media (max-width: 767px) {
+  .carousel-item {
+    height: 80vh;
+  }
+
+  .project-title {
+    font-size: 20px;
+    top: 20px;
+    padding: 0 15px;
+  }
+
+  .bottom-button {
+    bottom: 30px;
+  }
+
+  .bottom-button .btn {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+}
+
+/* For Small Phones - Screens below 480px */
+@media (max-width: 480px) {
+  .carousel-item {
+    height: 60vh;
+  }
+
+  .project-title {
+    font-size: 18px;
+    top: 15px;
+  }
+
+  .bottom-button {
+    bottom: 20px;
+  }
+
+  .bottom-button .btn {
+    font-size: 12px;
+    padding: 6px 18px;
+  }
+}
